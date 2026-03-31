@@ -14,6 +14,6 @@ export function machineGun() {
       addShot("bullet", "machine-gun", 75, "right", i * 400);
     }
 
-    publishTopicAfterXSeconds("machine_gun_done", 4000);
+    publishTopicAfterXSeconds("machine_gun_done", 4200);
   });
 }

@@ -1,6 +1,20 @@
 /* Here you should implement the observer pattern */
 
-export function publish(_topic: string): void {}
+type Callback = (message?: any) => void;
 
+const topics: Record<string, Callback[]> = {};
 
-export function subscribe(_topic: string, _callback: () => void): void {}
+// subscribe to a topic with a callback function
+export function subscribe(topic: string, fn: Callback) {
+  if (!topics[topic]) {
+    topics[topic] = [];
+  }
+  topics[topic].push(fn);
+}
+
+// publish a message to a topic
+export function publish(topic: string, message?: any) {
+  if (!topics[topic]) return;
+
+  topics[topic].forEach((fn) => fn(message));
+}

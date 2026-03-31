@@ -11,9 +11,9 @@ export function uzi() {
 
     // 10 bullets
     for (let i = 0; i < 10; i++) {
-      addShot("bullet", "uzi", 70, "left", i * 200);
+      addShot("bullet", "uzi", 60, "left", i * 200);
     }
 
-    publishTopicAfterXSeconds("uzi_done", 1000);
+    publishTopicAfterXSeconds("uzi_done", 2100);
   });
 }

@@ -11,5 +11,6 @@ export function laserGun() {
     }
   });
 
-  // no publish -> it's the last one in the chain
+  // no publish
+  // it's the last gun
 }

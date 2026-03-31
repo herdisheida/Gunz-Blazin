@@ -1,6 +1,6 @@
 import { publish } from "./observer";
 
-type animatedClass = "pistol" | "uzi" | "machineGun" | "laserGun";
+type animatedClass = "pistol" | "uzi" | "machine-gun" | "laser-gun";
 
 type directionFrom = "left" | "right";
 

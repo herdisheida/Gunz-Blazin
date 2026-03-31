@@ -11,5 +11,5 @@ export function pistol() {
   addShot("bullet", "pistol", 50, "right", 0);
   addShot("bullet", "pistol", 50, "right", 650);
 
-  publishTopicAfterXSeconds("pistol_done", 1000);
+  publishTopicAfterXSeconds("pistol_done", 1200);
 }

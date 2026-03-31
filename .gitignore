@@ -128,3 +128,5 @@ node_modules/tinyglobby/dist/index.mjs
 node_modules/tinyglobby/LICENSE
 node_modules/tinyglobby/package.json
 node_modules/tinyglobby/README.md
+node_modules/.vite/deps/package.json
+node_modules/.vite/deps/_metadata.json

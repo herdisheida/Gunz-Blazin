@@ -1,15 +1,19 @@
 import { publish } from "./observer";
 
-export const addAnimationClass = (className: string): void => {
+type animatedClass = "pistol" | "uzi" | "machineGun" | "laserGun";
+
+type directionFrom = "left" | "right";
+
+export const addAnimationClass = (className: animatedClass): void => {
   const element = document.getElementsByClassName(className)[0];
   element.classList.add(`${className}-animated`);
 };
 
 export const addShot = (
   type: string,
-  className: string,
+  className: animatedClass,
   topPosition: number,
-  direction: string,
+  direction: directionFrom,
   delayInMs: number,
 ): void => {
   const gunContainer = document.getElementsByClassName(className)[0].parentNode;
